@@ -4,4 +4,4 @@ spec:
   source:
     repoURL: https://github.com/verhyppo/example-argocd.git
     targetRevision: master
-namespace: example-apps
+namespace: testing-app
