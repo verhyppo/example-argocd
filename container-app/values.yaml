@@ -1,7 +1,7 @@
-  
 spec:
   destination:
     server: https://kubernetes.default.svc
   source:
     repoURL: https://github.com/verhyppo/example-argocd.git
     targetRevision: master
+namespace: example-apps
