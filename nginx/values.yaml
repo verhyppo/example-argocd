@@ -1,0 +1,11 @@
+nginx:
+  service:
+    type: ClusterIP
+  ingress:
+    annotations:
+        nginx.ingress.kubernetes.io/rewrite-target: /
+    enabled: true
+    hostname: ''
+    extraHosts:
+      - name: dev-picasso.brno.kmglobalrd.com
+        path: /ping
