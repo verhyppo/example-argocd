@@ -1,4 +1,6 @@
 nginx:
+  service:
+    type: ClusterIP
   ingress:
     annotations:
         nginx.ingress.kubernetes.io/rewrite-target: /
