@@ -12,6 +12,13 @@ spec:
     path: nginx
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
+    helm:
+        valuesFile: values.yaml
+        values: |
+          {{ if .Values.deployment.nginx }}
+          nginx:
+            {{- .Values.deployment.nginx | nindent 12 -}}
+          {{ end }}
   syncPolicy:
     automated:
       prune: false # Specifies if resources should be pruned during auto-syncing ( false by default ).

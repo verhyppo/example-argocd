@@ -5,3 +5,9 @@ spec:
     repoURL: https://github.com/verhyppo/example-argocd.git
     targetRevision: master
 namespace: testing-app
+deployment:
+  nginx: |
+    ingress:
+      extraHosts:
+        - name: dev-picasso.brno.kmglobalrd.com
+          path: /peng

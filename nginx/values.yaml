@@ -8,4 +8,4 @@ nginx:
     hostname: ''
     extraHosts:
       - name: dev-picasso.brno.kmglobalrd.com
-        path: /ping
+        path: /pang
